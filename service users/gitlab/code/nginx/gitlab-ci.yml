@@ -1,0 +1,23 @@
+
+stages:          # List of stages for jobs, and their order of execution
+  - deploy
+
+deploy-job:      # This job runs in the deploy stage.
+  stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
+  script:
+    - set -e
+    - hostname
+    - whoami    
+    - sft config
+    - cat ~/.ssh/config
+    - echo "Deploying application..."
+    - cd $CI_PROJECT_DIR/nginx/html
+    - rm -rf deploy.txt; echo "gitLab + ASA demo!!" >> deploy.txt; echo "--------------------" >> deploy.txt; echo "Source Server" >> deploy.txt; hostname >> deploy.txt; whoami >> deploy.txt; date >> deploy.txt
+    - scp -Cpr $(pwd) SERVERNAME:~/nginx
+    - ssh SERVERNAME 'cd ~/nginx/html; echo "--------------------" >> deploy.txt; echo "Target Server" >> deploy.txt; hostname >> deploy.txt; whoami >> deploy.txt; date >> deploy.txt; cat deploy.txt'
+    - ssh SERVERNAME 'sudo cp -pr ~/nginx/html /var/www/'
+    - hostname
+    - whoami
+    - echo "Deployment Complete"
+    
+
