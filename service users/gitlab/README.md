@@ -106,4 +106,8 @@ Run: sft ssh WEBSERVER
 You should now be able to authenticate as service user 'gitlab' from GITLABRUNNER to WEBSERVER using ASA.
 
 
-# Testing:
+# Testing
+
+# Thanks
+
+Shad Lutz @ Okta
