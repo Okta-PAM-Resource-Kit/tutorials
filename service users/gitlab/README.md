@@ -108,6 +108,10 @@ You should now be able to authenticate as service user 'gitlab' from GITLABRUNNE
 
 # Testing
 
+Navigate to Gitlab
+Click Build > Pipelines
+Click Run Pipeline
+
 # Thanks
 
 Shad Lutz @ Okta
