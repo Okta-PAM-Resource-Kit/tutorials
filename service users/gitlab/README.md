@@ -11,7 +11,8 @@ The tutorial assumes that you have the following in place;
 Base ASA Environment including; 2 Linux Servers (Ubuntu in this example)
 
 - 1 Assigned Web Server (WEBSERVER)
-- 1 Assigned Gitlab Runner Server (GITLABRUNNERSERVER) Gitlab Account (https://gitlab.com/users/sign_up)
+- 1 Assigned Gitlab Runner Server (GITLABRUNNERSERVER) 
+- Gitlab Account (https://gitlab.com/users/sign_up)
 
 # Setup GitLab:
 
