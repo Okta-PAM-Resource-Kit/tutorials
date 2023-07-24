@@ -1,81 +1,134 @@
-Setup Okta
+In this step we are going to setup and configure Okta Privileged Access to be integrated into your Okta tenant. After this step is completed, we will have a working Okta Privileged Access application and users and groups provisioned into it.
 
-Log into Demo Eng Okta WIC Tenant
+The following steps will be completed while you are logged into your Okta tenant.
 
-Create Okta Priviledged Access Groups
+**Create Okta Privileged Access Groups**
 
-Click: Directory
-Click: Groups
-Click: Add Group
-Name: Okta PA Full Administrators
-Description: Okta Priviledged Access Full Administrators
-Click: Save
+Select **Directory** > **Groups** from the navigation menu.
 
-Click: Add Group
-Name: Okta PA Resource Administrator
-Description: Users with this roles can manage configuration or settings for protected resources.
-Click: Save
+Click **Add Group**
 
-Click: Add Group
-Name: Okta PA Security Administrators
-Description: Users with this role can manage security policies for protected resources.
-Click: Save
+Enter **Okta PA Full Administrators** as the Group Name
 
-Click: Add Group
-Name: Okta PA Users
-Description: Users who can access PAM resources
-Click: Save
+Enter **Okta Privileged Access Full Administrators** as the Description 
+
+Click **Save**
+
+Click **Add Group**
+
+Enter **Okta PA Resource Administrator** as the Group Name
+
+Enter **Users with this roles can manage configuration or settings for protected resources.** as the Description 
+
+Click **Save**
+
+Click **Add Group**
+
+Enter **Okta PA Security Administrators** as the Group Name
+
+Enter **Users with this role can manage security policies for protected resources.** as the Description 
+
+Click **Save**
+  
+Click **Add Group**
+
+Enter **Okta PA Users** as the Group Name
+
+Enter **Users who can access PAM resources** as the Description 
+
+Click **Save**
+ 
+
+**Integrate Okta Privileged Access Application**
 
 
-Add Okta Priviledged Access Application
+Select **Applications** > **Applications**
 
-Click: Applications
-Click: Applications
-Click: Browser App Catalog
-Search: Okta Privileged Access
-Click: Add Integration
-Team Name: Enter an OPA Team Name (Remember this value)
-Follow Prompts etc
+Click **Browser App Catalog**
 
-Click Assignments
-Click: Assign
-Click: Assign to People
-Search: Your username
-Click Assign
+Type **Okta Privileged Access** in the search bar
 
-Click: Assign
-Click: Assign to Groups
-Search: Okta PA Full Administrators
-Click Assign
-Search: Okta PA Resource Administratos
-Click Assign
-Search: Okta PA Security Administrators
-Click Assign
-Search: Okta PA Users
-Click Assign
-Click: Done
+Click **Add Integration**
 
-Click: Provisioning
-Click: Configure API Integration
-Tick: Enable API Integration
-Click: Autenticate with OPA
-Type: Team Name
-Type: okta-scim
-Click: Approve
-Click: Save
-Click: Edit
-Tick: Create Users
-Tick: Update User Attributes
-Tick: Deactivate Users
-Click: Save
+Enter an **OPA Team Name** - This will be the name of your Okta Privileged Access tenant
 
-Click: Push Groups
-Click: Push Groups
-Click: Find Groups by Name
-Search: Okta PA Full Administrators
-Click: Save & Add Another
-Search: Okta PA Resource Administrators
-Search: Okta PA Security Administrators
-Click: Save & Add Another
-Search: Okta PA Users
-Click: Save
+COMPLETE STEPS
+
+Okta Privileged Access is now enabled and integrated into your Okta Tenant, we just have some final configurations to complete.
+
+Click **Assignments**
+
+Select **Assign** > **Assign to People**
+
+In the Search bar enter `your username`
+
+Click **Assign**
+
+Select **Assign** > **Assign to Groups**
+
+In the Search bar enter **Okta PA Full Administrators**
+
+Click **Assign**
+
+In the Search bar enter **Okta PA Resource Administrator**
+
+Click **Assign**
+
+In the Search bar enter **Okta PA Security Administrators**
+
+Click **Assign**
+
+In the Search bar enter **Okta PA Users**
+
+Click **Assign**
+
+Click **Done**
+
+We will now enable Provisioning from Okta into Okta Privileged Access.
+
+Click **Provisioning**
+
+Click **Configure API Integration**
+
+Select **Enable API Integration**
+
+Click **Authenticate with Okta Privileged Access**
+
+Enter your **Team Name** (This was enter when we added the Okta Privileged Access application into Okta)
+
+Enter **okta-scim**
+
+Click **Approve**
+
+Click **Save**
+
+Click **Edit**
+
+Select **Create Users**
+
+Select **Update User Attributes**
+
+Select **Deactivate Users**
+
+Click **Save**
+
+ We will now configure Push Groups.
+
+Click **Push Groups**
+
+Select **Push Groups** > **Find Groups by Name**
+
+In the Search bar enter **Okta PA Full Administrators**
+
+Click **Save & Add Another**
+
+In the Search bar enter **Okta PA Resource Administrators**
+Click: **Save & Add Another**
+
+In the Search bar enter **Okta PA Security Administrators**
+
+Click **Save & Add Another**
+
+In the Search bar enter **Okta PA Users**
+
+Click **Save**
