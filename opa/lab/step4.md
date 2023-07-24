@@ -2,7 +2,7 @@ In this step we will create and configure an Okta Privileged Access resource gro
 
 WHAT IS A RESOURCE GROUP
 
-Click **Resource Management ** from the navigation menu
+Click **Resource Management** from the navigation menu
 Click **Create Resource Group**
 Enter **DemoBiz** as the Resource Group name  
 

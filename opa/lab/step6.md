@@ -1,6 +1,6 @@
 Create additional projects
 
-In this step we will create additional projects without our newly created resource group
+In this step we will create a Linux project inside our newly created resource group
 
 Click **Resource Management**
 Click **DemoBiz**
