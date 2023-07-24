@@ -1,16 +1,15 @@
 Setup Okta PA Gateway
 
-Click: Gateways
-Click: Set up Gateway
-Click: Create Setup Token
-Setup Token Name: gateway_demo
-Add Gateway Labels: env:demo
+In this step we will set up the Okta Priviledged Access Gateway
 
-Click: Done
+Click **Gateways** from the navigation menu
+Select **Set up Gateway** > **Create Setup Token**
+Enter `gateway_demo` as the Setup Token Name 
+Enter `env:demo` as the Gateway Labels
+Click **Done**  
 
-Click: Set up Gatway
-Click: View Setup Token
-Copy gateway_demo setup token
+Select **Set up Gateway** > **View Setup Token**
+Copy `gateway_demo` setup token
 
 SETUP GATEWAY LINUX MACHINE HERE
 USE GATEWAY SETUP TOKEN
