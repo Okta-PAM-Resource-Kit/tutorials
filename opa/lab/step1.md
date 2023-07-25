@@ -1,7 +1,3 @@
-Enable Okta Priviledged Access
+Okta Privileged Access is currently in an early access phase. In order to gain access you will need to enable the 'Okta Privileged Access' SKU.  
 
-Log into SU
-Locate your new Demo Eng Okta WIC Tenant
-Enable the following;
-
-SKUs: Okta Priviledge Access
+If you do not have access to do this please contact your Okta representative.
