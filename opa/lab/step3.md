@@ -4,7 +4,7 @@ In this step we will configure role based access controls in Okta Priviledged Ac
 
 The following steps will be completed from within the Okta Priviledged Access application.
 
-Click **Groups** from the navigation menu
+Click **Groups** from the navigation menu  
 Click **Okta PA Full Administrators**
 Select **PAM Administrators, Resource Administrator, Security Administrator**
 Click **Update Roles**  
